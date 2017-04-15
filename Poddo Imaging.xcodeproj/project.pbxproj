@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8108A720B5C6D8796BDCD80C /* Pods_Poddo_Imaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7585ECF95B4EA4DAF05A4A /* Pods_Poddo_Imaging.framework */; };
+		A808683E1EA2855D00D532B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A808683D1EA2855D00D532B5 /* AppDelegate.swift */; };
+		A80868401EA2855D00D532B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A808683F1EA2855D00D532B5 /* ViewController.swift */; };
+		A80868431EA2855D00D532B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A80868411EA2855D00D532B5 /* Main.storyboard */; };
+		A80868451EA2855E00D532B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80868441EA2855E00D532B5 /* Assets.xcassets */; };
+		A80868481EA2855E00D532B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A80868461EA2855E00D532B5 /* LaunchScreen.storyboard */; };
+		A80868521EA28E4900D532B5 /* PickPaintingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80868511EA28E4900D532B5 /* PickPaintingViewController.swift */; };
+		A80868541EA28E5300D532B5 /* PickArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80868531EA28E5300D532B5 /* PickArtistViewController.swift */; };
+		A80868561EA2906700D532B5 /* LayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80868551EA2906700D532B5 /* LayoutViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5C246C46386D26047EDF2D51 /* Pods-Poddo Imaging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Poddo Imaging.release.xcconfig"; path = "Pods/Target Support Files/Pods-Poddo Imaging/Pods-Poddo Imaging.release.xcconfig"; sourceTree = "<group>"; };
+		94A89CB2E990944C1F5F35BF /* Pods-Poddo Imaging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Poddo Imaging.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Poddo Imaging/Pods-Poddo Imaging.debug.xcconfig"; sourceTree = "<group>"; };
+		A808683A1EA2855D00D532B5 /* Poddo Imaging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poddo Imaging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A808683D1EA2855D00D532B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A808683F1EA2855D00D532B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A80868421EA2855D00D532B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A80868441EA2855E00D532B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A80868471EA2855E00D532B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A80868491EA2855E00D532B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A80868511EA28E4900D532B5 /* PickPaintingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickPaintingViewController.swift; sourceTree = "<group>"; };
+		A80868531EA28E5300D532B5 /* PickArtistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickArtistViewController.swift; sourceTree = "<group>"; };
+		A80868551EA2906700D532B5 /* LayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutViewController.swift; sourceTree = "<group>"; };
+		EC7585ECF95B4EA4DAF05A4A /* Pods_Poddo_Imaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Poddo_Imaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A80868371EA2855D00D532B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8108A720B5C6D8796BDCD80C /* Pods_Poddo_Imaging.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D9F0E3AD7782BFD342F20EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94A89CB2E990944C1F5F35BF /* Pods-Poddo Imaging.debug.xcconfig */,
+				5C246C46386D26047EDF2D51 /* Pods-Poddo Imaging.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A80868311EA2855D00D532B5 = {
+			isa = PBXGroup;
+			children = (
+				A808683C1EA2855D00D532B5 /* Poddo Imaging */,
+				A808683B1EA2855D00D532B5 /* Products */,
+				4D9F0E3AD7782BFD342F20EF /* Pods */,
+				DD890CBFCD04F7674FE2243B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A808683B1EA2855D00D532B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A808683A1EA2855D00D532B5 /* Poddo Imaging.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A808683C1EA2855D00D532B5 /* Poddo Imaging */ = {
+			isa = PBXGroup;
+			children = (
+				A808683D1EA2855D00D532B5 /* AppDelegate.swift */,
+				A808683F1EA2855D00D532B5 /* ViewController.swift */,
+				A80868511EA28E4900D532B5 /* PickPaintingViewController.swift */,
+				A80868531EA28E5300D532B5 /* PickArtistViewController.swift */,
+				A80868551EA2906700D532B5 /* LayoutViewController.swift */,
+				A80868411EA2855D00D532B5 /* Main.storyboard */,
+				A80868441EA2855E00D532B5 /* Assets.xcassets */,
+				A80868461EA2855E00D532B5 /* LaunchScreen.storyboard */,
+				A80868491EA2855E00D532B5 /* Info.plist */,
+			);
+			path = "Poddo Imaging";
+			sourceTree = "<group>";
+		};
+		DD890CBFCD04F7674FE2243B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC7585ECF95B4EA4DAF05A4A /* Pods_Poddo_Imaging.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A80868391EA2855D00D532B5 /* Poddo Imaging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A808684C1EA2855E00D532B5 /* Build configuration list for PBXNativeTarget "Poddo Imaging" */;
+			buildPhases = (
+				2507708DFE5D3EEA94528393 /* [CP] Check Pods Manifest.lock */,
+				A80868361EA2855D00D532B5 /* Sources */,
+				A80868371EA2855D00D532B5 /* Frameworks */,
+				A80868381EA2855D00D532B5 /* Resources */,
+				D749DBBAB737D17AFE5D92C7 /* [CP] Embed Pods Frameworks */,
+				EC78F891695CFA48BE7F9944 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Poddo Imaging";
+			productName = "Poddo Imaging";
+			productReference = A808683A1EA2855D00D532B5 /* Poddo Imaging.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A80868321EA2855D00D532B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Mayank Sanganeria";
+				TargetAttributes = {
+					A80868391EA2855D00D532B5 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A80868351EA2855D00D532B5 /* Build configuration list for PBXProject "Poddo Imaging" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A80868311EA2855D00D532B5;
+			productRefGroup = A808683B1EA2855D00D532B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A80868391EA2855D00D532B5 /* Poddo Imaging */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A80868381EA2855D00D532B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80868481EA2855E00D532B5 /* LaunchScreen.storyboard in Resources */,
+				A80868451EA2855E00D532B5 /* Assets.xcassets in Resources */,
+				A80868431EA2855D00D532B5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2507708DFE5D3EEA94528393 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D749DBBAB737D17AFE5D92C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Poddo Imaging/Pods-Poddo Imaging-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC78F891695CFA48BE7F9944 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Poddo Imaging/Pods-Poddo Imaging-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A80868361EA2855D00D532B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80868561EA2906700D532B5 /* LayoutViewController.swift in Sources */,
+				A80868401EA2855D00D532B5 /* ViewController.swift in Sources */,
+				A80868541EA28E5300D532B5 /* PickArtistViewController.swift in Sources */,
+				A808683E1EA2855D00D532B5 /* AppDelegate.swift in Sources */,
+				A80868521EA28E4900D532B5 /* PickPaintingViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A80868411EA2855D00D532B5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A80868421EA2855D00D532B5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A80868461EA2855E00D532B5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A80868471EA2855E00D532B5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A808684A1EA2855E00D532B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A808684B1EA2855E00D532B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A808684D1EA2855E00D532B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94A89CB2E990944C1F5F35BF /* Pods-Poddo Imaging.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Poddo Imaging/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MS.Poddo-Imaging";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A808684E1EA2855E00D532B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C246C46386D26047EDF2D51 /* Pods-Poddo Imaging.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Poddo Imaging/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MS.Poddo-Imaging";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A80868351EA2855D00D532B5 /* Build configuration list for PBXProject "Poddo Imaging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A808684A1EA2855E00D532B5 /* Debug */,
+				A808684B1EA2855E00D532B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A808684C1EA2855E00D532B5 /* Build configuration list for PBXNativeTarget "Poddo Imaging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A808684D1EA2855E00D532B5 /* Debug */,
+				A808684E1EA2855E00D532B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A80868321EA2855D00D532B5 /* Project object */;
+}
