@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -164,7 +165,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="iDJ-QP-Lrb">
-                                <rect key="frame" x="35" y="72" width="305" height="30"/>
+                                <rect key="frame" x="24" y="72" width="327" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Size:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nO9-qQ-JN2">
                                         <rect key="frame" x="0.0" y="0.0" width="83" height="30"/>
@@ -173,9 +174,8 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.29999999999999999" minValue="0.050000000000000003" maxValue="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="s3F-pb-8d8">
-                                        <rect key="frame" x="103" y="0.0" width="204" height="31"/>
+                                        <rect key="frame" x="103" y="0.0" width="226" height="31"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="hf5-n3-ImW"/>
                                             <constraint firstAttribute="height" constant="30" id="i40-TB-2pn"/>
                                         </constraints>
                                         <connections>
@@ -190,6 +190,8 @@
                             <constraint firstItem="iDJ-QP-Lrb" firstAttribute="top" secondItem="l1z-TF-Xxg" secondAttribute="bottom" constant="8" id="4Zs-aN-ywZ"/>
                             <constraint firstItem="iDJ-QP-Lrb" firstAttribute="centerX" secondItem="BEB-8q-aJo" secondAttribute="centerX" id="R9C-pG-KrC"/>
                             <constraint firstAttribute="trailing" secondItem="vi0-bC-B9E" secondAttribute="trailing" id="YI7-Z4-Tn6"/>
+                            <constraint firstItem="iDJ-QP-Lrb" firstAttribute="leading" secondItem="BEB-8q-aJo" secondAttribute="leadingMargin" constant="8" id="dEx-Fi-Mxw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iDJ-QP-Lrb" secondAttribute="trailing" constant="8" id="ogB-Dq-FeF"/>
                             <constraint firstItem="vi0-bC-B9E" firstAttribute="leading" secondItem="BEB-8q-aJo" secondAttribute="leading" id="sd0-O0-SYX"/>
                             <constraint firstItem="vi0-bC-B9E" firstAttribute="top" secondItem="iDJ-QP-Lrb" secondAttribute="bottom" constant="8" id="tNZ-8e-M7G"/>
                         </constraints>
