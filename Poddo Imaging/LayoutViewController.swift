@@ -78,6 +78,8 @@ class LayoutViewController: UIViewController {
             artistY = artistY + paintingImage.size.height/2.0 - artistSize/2.0
 
             let artistView = UIImageView(frame: CGRect(x: artistX, y: artistY, width: artistSize, height: artistSize))
+            artistView.layer.cornerRadius = artistSize / 2.0
+            artistView.clipsToBounds = true
             artistView.image = artistImage
             container.addSubview(artistView)
             return container
