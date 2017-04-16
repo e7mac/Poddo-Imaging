@@ -39,20 +39,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmq-IO-RvM">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmq-IO-RvM">
                                 <rect key="frame" x="143" y="74" width="88" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Pick Painting"/>
                                 <connections>
                                     <action selector="chooseImage:" destination="fhd-GL-Wzq" eventType="touchUpInside" id="Cag-es-n0e"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t1H-mf-5df">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t1H-mf-5df">
                                 <rect key="frame" x="0.0" y="114" width="375" height="378"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="t1H-mf-5df" secondAttribute="height" id="gy0-Hb-AP7"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="t1H-mf-5df" firstAttribute="leading" secondItem="sQH-Gq-TQR" secondAttribute="leading" id="E3i-m1-hMb"/>
+                            <constraint firstItem="t1H-mf-5df" firstAttribute="top" secondItem="Bmq-IO-RvM" secondAttribute="bottom" constant="8" id="Tn5-dS-l96"/>
+                            <constraint firstItem="Bmq-IO-RvM" firstAttribute="top" secondItem="HJQ-se-Ek5" secondAttribute="bottom" constant="8" id="XxO-z9-eJN"/>
+                            <constraint firstAttribute="trailing" secondItem="t1H-mf-5df" secondAttribute="trailing" id="ZDH-Mm-pCh"/>
+                            <constraint firstItem="Bmq-IO-RvM" firstAttribute="centerX" secondItem="sQH-Gq-TQR" secondAttribute="centerX" id="kfj-JA-1Gr"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="dWr-V5-CBm"/>
                     <navigationItem key="navigationItem" title="Pick Painting" id="T3N-1c-dRn">
@@ -82,20 +90,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pyl-nq-0Xb">
-                                <rect key="frame" x="152" y="74" width="71" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pyl-nq-0Xb">
+                                <rect key="frame" x="152" y="72" width="71" height="30"/>
                                 <state key="normal" title="Pick Artist"/>
                                 <connections>
                                     <action selector="chooseImage:" destination="kLY-Zq-0Pn" eventType="touchUpInside" id="FcW-cD-Yli"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1sE-Oz-3N1">
-                                <rect key="frame" x="0.0" y="114" width="375" height="375"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1sE-Oz-3N1">
+                                <rect key="frame" x="0.0" y="110" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1sE-Oz-3N1" secondAttribute="height" multiplier="1:1" id="veG-Xw-VM6"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1sE-Oz-3N1" firstAttribute="top" secondItem="Pyl-nq-0Xb" secondAttribute="bottom" constant="8" id="0N8-yB-HJg"/>
+                            <constraint firstItem="1sE-Oz-3N1" firstAttribute="leading" secondItem="ZOV-rY-zfu" secondAttribute="leading" id="LU7-sH-kOK"/>
+                            <constraint firstItem="Pyl-nq-0Xb" firstAttribute="centerX" secondItem="ZOV-rY-zfu" secondAttribute="centerX" id="VXe-ju-kFI"/>
+                            <constraint firstAttribute="trailing" secondItem="1sE-Oz-3N1" secondAttribute="trailing" id="ar4-Ey-G5J"/>
+                            <constraint firstItem="Pyl-nq-0Xb" firstAttribute="top" secondItem="36f-Yx-622" secondAttribute="bottom" constant="8" id="y5H-eT-cHe"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Pick Artist" id="Xlg-pL-Uaf">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="4jM-Bx-e8y">
