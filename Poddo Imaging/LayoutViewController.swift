@@ -32,6 +32,7 @@ class LayoutViewController: UIViewController {
         }
         artistImageView.isUserInteractionEnabled = true
         artistImageView.enableDragging()
+        makeArtistCircular()
     }
 
     @IBAction func saveImage(_ sender: Any) {
@@ -47,6 +48,7 @@ class LayoutViewController: UIViewController {
         let artistSize = min(paintingImageView.bounds.size.width, paintingImageView.bounds.size.height) * percentage
         print(artistSize)
         artistImageView.bounds = CGRect(x: 0, y: 0, width: artistSize, height: artistSize)
+        makeArtistCircular()
     }
 
     private func offscreenImageView() -> UIView? {
@@ -81,6 +83,11 @@ class LayoutViewController: UIViewController {
             return container
         }
         return nil
+    }
+
+    private func makeArtistCircular() {
+        artistImageView.layer.cornerRadius = artistImageView.bounds.size.width / 2.0
+        artistImageView.clipsToBounds = true
     }
 
     private func messageDone() {
