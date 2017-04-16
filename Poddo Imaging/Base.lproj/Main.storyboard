@@ -106,7 +106,7 @@
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zNr-An-BmK">
-                                <rect key="frame" x="0.0" y="110" width="375" height="557"/>
+                                <rect key="frame" x="0.0" y="126" width="375" height="541"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5ND-Ej-b6k">
                                     <size key="itemSize" width="100" height="100"/>
@@ -142,7 +142,7 @@
                             <constraint firstItem="Pyl-nq-0Xb" firstAttribute="leading" secondItem="ZOV-rY-zfu" secondAttribute="leadingMargin" constant="10" id="0e0-hL-LWi"/>
                             <constraint firstItem="NGF-Pi-S1M" firstAttribute="top" secondItem="zNr-An-BmK" secondAttribute="bottom" id="DJh-4U-cuK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Udx-0R-H8t" secondAttribute="trailing" constant="8" id="H8B-Nr-b1Q"/>
-                            <constraint firstItem="zNr-An-BmK" firstAttribute="top" secondItem="Pyl-nq-0Xb" secondAttribute="bottom" constant="8" id="Kx1-PR-NN2"/>
+                            <constraint firstItem="zNr-An-BmK" firstAttribute="top" secondItem="Pyl-nq-0Xb" secondAttribute="bottom" constant="24" id="Kx1-PR-NN2"/>
                             <constraint firstItem="zNr-An-BmK" firstAttribute="leading" secondItem="ZOV-rY-zfu" secondAttribute="leading" id="Pmm-2n-5Qe"/>
                             <constraint firstAttribute="trailing" secondItem="zNr-An-BmK" secondAttribute="trailing" id="pbn-sK-qGN"/>
                             <constraint firstItem="Udx-0R-H8t" firstAttribute="top" secondItem="36f-Yx-622" secondAttribute="bottom" constant="8" id="wg1-42-Q6e"/>
