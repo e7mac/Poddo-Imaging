@@ -48,6 +48,7 @@ class PickArtistViewController: UIViewController, UIImagePickerControllerDelegat
     func circleCropDidCropImage(_ image: UIImage) {
         let artist = Artist.createArtist(image: image)
         artists.append(artist)
+        persistArtists()
         selectedArtist = artist
         collectionView.reloadData()
         navigationItem.rightBarButtonItem?.isEnabled = true
@@ -61,11 +62,11 @@ class PickArtistViewController: UIViewController, UIImagePickerControllerDelegat
         collectionView.reloadData()
         navigationItem.rightBarButtonItem?.isEnabled = false
         removeButton.isEnabled = false
+        persistArtists()
     }
 
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        persistArtists()
         let destination = segue.destination as! LayoutViewController
         destination.paintingImage = paintingImage
         if let selectedArtist = selectedArtist {
