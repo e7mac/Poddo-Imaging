@@ -46,7 +46,6 @@ class LayoutViewController: UIViewController {
 
     private func setArtistSizePercentage(_ percentage: CGFloat) {
         let artistSize = min(paintingImageView.bounds.size.width, paintingImageView.bounds.size.height) * percentage
-        print(artistSize)
         artistImageView.bounds = CGRect(x: 0, y: 0, width: artistSize, height: artistSize)
         makeArtistCircular()
     }
@@ -101,10 +100,12 @@ class LayoutViewController: UIViewController {
     private func saveToPhotos(view: UIView?) {
         if let view = view {
             UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.isOpaque, 0.0)
-            view.drawHierarchy(in: view.bounds, afterScreenUpdates: true)
+            view.layer.render(in: UIGraphicsGetCurrentContext()!)
+            // below wasn't working for iPhone 5
+            //            view.drawHierarchy(in: view.bounds, afterScreenUpdates: true)
             let snapshotImageFromMyView = UIGraphicsGetImageFromCurrentImageContext()
-            UIImageWriteToSavedPhotosAlbum(snapshotImageFromMyView!, nil,nil, nil);
             UIGraphicsEndImageContext()
+            UIImageWriteToSavedPhotosAlbum(snapshotImageFromMyView!, nil,nil, nil);
         }
     }
 }
