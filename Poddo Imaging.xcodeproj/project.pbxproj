@@ -16,6 +16,7 @@
 		A80868521EA28E4900D532B5 /* PickPaintingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80868511EA28E4900D532B5 /* PickPaintingViewController.swift */; };
 		A80868541EA28E5300D532B5 /* PickArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80868531EA28E5300D532B5 /* PickArtistViewController.swift */; };
 		A80868561EA2906700D532B5 /* LayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80868551EA2906700D532B5 /* LayoutViewController.swift */; };
+		A86554F41EA3A66100BEFFA9 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86554F31EA3A66100BEFFA9 /* Artist.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		A80868511EA28E4900D532B5 /* PickPaintingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickPaintingViewController.swift; sourceTree = "<group>"; };
 		A80868531EA28E5300D532B5 /* PickArtistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickArtistViewController.swift; sourceTree = "<group>"; };
 		A80868551EA2906700D532B5 /* LayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutViewController.swift; sourceTree = "<group>"; };
+		A86554F31EA3A66100BEFFA9 /* Artist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		EC7585ECF95B4EA4DAF05A4A /* Pods_Poddo_Imaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Poddo_Imaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,7 @@
 				A808683F1EA2855D00D532B5 /* ViewController.swift */,
 				A80868511EA28E4900D532B5 /* PickPaintingViewController.swift */,
 				A80868531EA28E5300D532B5 /* PickArtistViewController.swift */,
+				A86554F31EA3A66100BEFFA9 /* Artist.swift */,
 				A80868551EA2906700D532B5 /* LayoutViewController.swift */,
 				A80868411EA2855D00D532B5 /* Main.storyboard */,
 				A80868441EA2855E00D532B5 /* Assets.xcassets */,
@@ -221,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A86554F41EA3A66100BEFFA9 /* Artist.swift in Sources */,
 				A80868561EA2906700D532B5 /* LayoutViewController.swift in Sources */,
 				A80868401EA2855D00D532B5 /* ViewController.swift in Sources */,
 				A80868541EA28E5300D532B5 /* PickArtistViewController.swift in Sources */,
