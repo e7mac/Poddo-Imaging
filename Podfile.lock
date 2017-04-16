@@ -1,0 +1,40 @@
+PODS:
+  - AAPhotoCircleCrop (1.1.0)
+  - PBImageStorage (0.1.1)
+  - SnapKit (3.0.2)
+  - UIView+draggable (1.1.1)
+
+DEPENDENCIES:
+  - AAPhotoCircleCrop (from `https://github.com/andreaantonioni/AAPhotoCircleCrop`)
+  - PBImageStorage (from `https://github.com/pronebird/PBImageStorage`)
+  - SnapKit
+  - UIView+draggable (from `https://github.com/andreamazz/UIView-draggable`)
+
+EXTERNAL SOURCES:
+  AAPhotoCircleCrop:
+    :git: https://github.com/andreaantonioni/AAPhotoCircleCrop
+  PBImageStorage:
+    :git: https://github.com/pronebird/PBImageStorage
+  UIView+draggable:
+    :git: https://github.com/andreamazz/UIView-draggable
+
+CHECKOUT OPTIONS:
+  AAPhotoCircleCrop:
+    :commit: 049fa18f6bcafe5dc9a6f994c9392d4623220aea
+    :git: https://github.com/andreaantonioni/AAPhotoCircleCrop
+  PBImageStorage:
+    :commit: e95a21bc81ca8d60770aff9ae7e0921dfe558a00
+    :git: https://github.com/pronebird/PBImageStorage
+  UIView+draggable:
+    :commit: 1cb1e78f58f146fe7425c6ef95c8c245b6973de7
+    :git: https://github.com/andreamazz/UIView-draggable
+
+SPEC CHECKSUMS:
+  AAPhotoCircleCrop: 6d78fa9c02aea40b30a1b208539724f0d49cb608
+  PBImageStorage: beb5aafb208544ab2ab35201d9fa1c4301f0b64f
+  SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
+  UIView+draggable: 93e12504c7b6a89c89942a9bda794e4c8e9ca87a
+
+PODFILE CHECKSUM: c389ffe48f4e217fd2adfba5ff9acc66b7e1d1f8
+
+COCOAPODS: 1.1.1

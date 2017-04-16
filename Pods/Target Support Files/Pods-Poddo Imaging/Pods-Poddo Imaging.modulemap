@@ -1,0 +1,6 @@
+framework module Pods_Poddo_Imaging {
+  umbrella header "Pods-Poddo Imaging-umbrella.h"
+
+  export *
+  module * { export * }
+}
