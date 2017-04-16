@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="I4N-Gu-fyz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="I4N-Gu-fyz">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -26,41 +25,34 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zhd-sb-tz8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-486" y="-683"/>
+            <point key="canvasLocation" x="-303.75" y="-759.26833333333332"/>
         </scene>
         <!--Pick Painting-->
         <scene sceneID="tdY-EL-mZg">
             <objects>
                 <viewController id="fhd-GL-Wzq" customClass="PickPaintingViewController" customModule="Poddo_Imaging" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="fBw-Xb-tnI"/>
-                        <viewControllerLayoutGuide type="bottom" id="i9g-Ar-bje"/>
+                        <viewControllerLayoutGuide type="top" id="HJQ-se-Ek5"/>
+                        <viewControllerLayoutGuide type="bottom" id="dS5-Fs-ms0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="sQH-Gq-TQR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmq-IO-RvM">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmq-IO-RvM">
                                 <rect key="frame" x="143" y="74" width="88" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Pick Painting"/>
                                 <connections>
                                     <action selector="chooseImage:" destination="fhd-GL-Wzq" eventType="touchUpInside" id="Cag-es-n0e"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t1H-mf-5df">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t1H-mf-5df">
                                 <rect key="frame" x="0.0" y="114" width="375" height="378"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="t1H-mf-5df" firstAttribute="top" secondItem="Bmq-IO-RvM" secondAttribute="bottom" constant="10" id="E5F-A1-Upj"/>
-                            <constraint firstItem="t1H-mf-5df" firstAttribute="leading" secondItem="sQH-Gq-TQR" secondAttribute="leading" id="FC8-Hp-krT"/>
-                            <constraint firstItem="t1H-mf-5df" firstAttribute="centerX" secondItem="sQH-Gq-TQR" secondAttribute="centerX" id="mem-h1-5m2"/>
-                            <constraint firstAttribute="trailing" secondItem="t1H-mf-5df" secondAttribute="trailing" id="mob-7R-yma"/>
-                            <constraint firstItem="i9g-Ar-bje" firstAttribute="top" secondItem="t1H-mf-5df" secondAttribute="bottom" constant="175" id="msa-9Y-Sry"/>
-                            <constraint firstItem="Bmq-IO-RvM" firstAttribute="top" secondItem="fBw-Xb-tnI" secondAttribute="bottom" constant="10" id="p79-e3-rSG"/>
-                            <constraint firstItem="Bmq-IO-RvM" firstAttribute="centerX" secondItem="sQH-Gq-TQR" secondAttribute="centerX" id="pc0-Av-e9R"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="dWr-V5-CBm"/>
                     <navigationItem key="navigationItem" title="Pick Painting" id="T3N-1c-dRn">
@@ -76,43 +68,34 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5a3-17-Aky" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="237.59999999999999" y="-683.20839580209895"/>
+            <point key="canvasLocation" x="148.5" y="-759.49999999999989"/>
         </scene>
         <!--Pick Artist-->
         <scene sceneID="UxX-cb-caq">
             <objects>
                 <viewController id="kLY-Zq-0Pn" customClass="PickArtistViewController" customModule="Poddo_Imaging" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Elt-02-met"/>
-                        <viewControllerLayoutGuide type="bottom" id="RA6-Jo-uCL"/>
+                        <viewControllerLayoutGuide type="top" id="36f-Yx-622"/>
+                        <viewControllerLayoutGuide type="bottom" id="NGF-Pi-S1M"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ZOV-rY-zfu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pyl-nq-0Xb">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pyl-nq-0Xb">
                                 <rect key="frame" x="152" y="74" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Pick Artist"/>
                                 <connections>
                                     <action selector="chooseImage:" destination="kLY-Zq-0Pn" eventType="touchUpInside" id="FcW-cD-Yli"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1sE-Oz-3N1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1sE-Oz-3N1">
                                 <rect key="frame" x="0.0" y="114" width="375" height="375"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="1sE-Oz-3N1" secondAttribute="height" id="60T-Ry-Omq"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="1sE-Oz-3N1" secondAttribute="trailing" id="5nA-Aj-x1B"/>
-                            <constraint firstItem="Pyl-nq-0Xb" firstAttribute="top" secondItem="Elt-02-met" secondAttribute="bottom" constant="10" id="7OW-Jd-Kvv"/>
-                            <constraint firstItem="1sE-Oz-3N1" firstAttribute="leading" secondItem="ZOV-rY-zfu" secondAttribute="leading" id="MWD-rY-1oV"/>
-                            <constraint firstItem="1sE-Oz-3N1" firstAttribute="centerX" secondItem="ZOV-rY-zfu" secondAttribute="centerX" id="cSv-R8-2yK"/>
-                            <constraint firstItem="1sE-Oz-3N1" firstAttribute="top" secondItem="Pyl-nq-0Xb" secondAttribute="bottom" constant="10" id="vtQ-T1-Bez"/>
-                            <constraint firstItem="Pyl-nq-0Xb" firstAttribute="centerX" secondItem="ZOV-rY-zfu" secondAttribute="centerX" id="zK4-o1-eDA"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Pick Artist" id="Xlg-pL-Uaf">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="4jM-Bx-e8y">
@@ -127,92 +110,61 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JRa-PH-zNq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="946" y="-683"/>
+            <point key="canvasLocation" x="591.25" y="-759.26833333333332"/>
         </scene>
         <!--Layout-->
         <scene sceneID="EXS-TQ-SKK">
             <objects>
                 <viewController id="hvH-23-fnq" customClass="LayoutViewController" customModule="Poddo_Imaging" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="RyS-td-lRV"/>
-                        <viewControllerLayoutGuide type="bottom" id="iCW-63-1UH"/>
+                        <viewControllerLayoutGuide type="top" id="l1z-TF-Xxg"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZxJ-gp-4ed"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="BEB-8q-aJo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vi0-bC-B9E">
-                                <rect key="frame" x="0.0" y="159" width="375" height="300"/>
+                                <rect key="frame" x="0.0" y="110" width="375" height="375"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="300" placeholderIntrinsicHeight="300" translatesAutoresizingMaskIntoConstraints="NO" id="NgJ-rJ-zWM">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M2P-dr-l3i">
-                                        <rect key="frame" x="8" y="8" width="110" height="105"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CH1-4j-u0J" customClass="UIImageView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M2P-dr-l3i">
+                                                <rect key="frame" x="65" y="11" width="110" height="105"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="NgJ-rJ-zWM" secondAttribute="bottom" id="6H6-Ac-CxJ"/>
-                                    <constraint firstItem="NgJ-rJ-zWM" firstAttribute="leading" secondItem="vi0-bC-B9E" secondAttribute="leading" id="GeM-NM-SuM"/>
-                                    <constraint firstAttribute="trailing" secondItem="NgJ-rJ-zWM" secondAttribute="trailing" id="cTf-kB-aSs"/>
-                                    <constraint firstItem="NgJ-rJ-zWM" firstAttribute="top" secondItem="vi0-bC-B9E" secondAttribute="top" id="dHc-Fo-My4"/>
+                                    <constraint firstAttribute="width" secondItem="vi0-bC-B9E" secondAttribute="height" id="EVg-xv-mXb"/>
+                                    <constraint firstAttribute="trailing" secondItem="CH1-4j-u0J" secondAttribute="trailing" id="HVg-2y-yWg"/>
+                                    <constraint firstItem="CH1-4j-u0J" firstAttribute="top" secondItem="vi0-bC-B9E" secondAttribute="top" id="l63-KU-Jgw"/>
+                                    <constraint firstAttribute="bottom" secondItem="CH1-4j-u0J" secondAttribute="bottom" id="tnu-V3-mMj"/>
+                                    <constraint firstItem="CH1-4j-u0J" firstAttribute="leading" secondItem="vi0-bC-B9E" secondAttribute="leading" id="yTU-0C-J9Q"/>
                                 </constraints>
                             </view>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.29999999999999999" minValue="0.20000000000000001" maxValue="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="s3F-pb-8d8">
-                                <rect key="frame" x="86" y="74" width="203" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.29999999999999999" minValue="0.050000000000000003" maxValue="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="s3F-pb-8d8">
+                                <rect key="frame" x="85.5" y="72" width="204" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="199" id="6Yr-di-Cvj"/>
+                                    <constraint firstAttribute="width" constant="200" id="hf5-n3-ImW"/>
+                                    <constraint firstAttribute="height" constant="30" id="i40-TB-2pn"/>
                                 </constraints>
                                 <connections>
                                     <action selector="changeSize:" destination="hvH-23-fnq" eventType="valueChanged" id="Szv-Lf-Uzq"/>
                                 </connections>
                             </slider>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hy4-Mx-aMf">
-                                <rect key="frame" x="10" y="119" width="57" height="30"/>
-                                <state key="normal" title="Top Left"/>
-                                <connections>
-                                    <action selector="topLeft:" destination="hvH-23-fnq" eventType="touchUpInside" id="8WZ-Dh-Pqa"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJB-k9-Bsz">
-                                <rect key="frame" x="299" y="119" width="66" height="30"/>
-                                <state key="normal" title="Top Right"/>
-                                <connections>
-                                    <action selector="topRight:" destination="hvH-23-fnq" eventType="touchUpInside" id="4pJ-ht-oFG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpi-bT-fF4">
-                                <rect key="frame" x="279" y="469" width="90" height="30"/>
-                                <state key="normal" title="Bottom Right"/>
-                                <connections>
-                                    <action selector="bottomRight:" destination="hvH-23-fnq" eventType="touchUpInside" id="Ffa-Mq-v0a"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vkd-tm-BGj">
-                                <rect key="frame" x="10" y="469" width="81" height="30"/>
-                                <state key="normal" title="Bottom Left"/>
-                                <connections>
-                                    <action selector="bottomLeft:" destination="hvH-23-fnq" eventType="touchUpInside" id="srh-vW-LMX"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Hy4-Mx-aMf" firstAttribute="leading" secondItem="BEB-8q-aJo" secondAttribute="leading" constant="10" id="0w0-N2-tW5"/>
-                            <constraint firstItem="s3F-pb-8d8" firstAttribute="centerX" secondItem="BEB-8q-aJo" secondAttribute="centerX" id="5wG-tX-TqH"/>
-                            <constraint firstItem="GJB-k9-Bsz" firstAttribute="top" secondItem="s3F-pb-8d8" secondAttribute="bottom" constant="15" id="NJW-2G-4gN"/>
-                            <constraint firstItem="hpi-bT-fF4" firstAttribute="trailing" secondItem="BEB-8q-aJo" secondAttribute="trailingMargin" constant="10" id="SEq-lD-mB2"/>
-                            <constraint firstItem="vi0-bC-B9E" firstAttribute="top" secondItem="Hy4-Mx-aMf" secondAttribute="bottom" constant="10" id="Wv9-aT-9As"/>
-                            <constraint firstItem="Vkd-tm-BGj" firstAttribute="top" secondItem="vi0-bC-B9E" secondAttribute="bottom" constant="10" id="bFn-F8-Xba"/>
-                            <constraint firstItem="hpi-bT-fF4" firstAttribute="top" secondItem="vi0-bC-B9E" secondAttribute="bottom" constant="10" id="bUF-Ca-Meb"/>
-                            <constraint firstAttribute="trailing" secondItem="vi0-bC-B9E" secondAttribute="trailing" id="bxa-LH-bSX"/>
-                            <constraint firstItem="vi0-bC-B9E" firstAttribute="leading" secondItem="BEB-8q-aJo" secondAttribute="leading" id="ieN-WX-38K"/>
-                            <constraint firstAttribute="trailing" secondItem="GJB-k9-Bsz" secondAttribute="trailing" constant="10" id="jse-E3-9OW"/>
-                            <constraint firstItem="s3F-pb-8d8" firstAttribute="top" secondItem="RyS-td-lRV" secondAttribute="bottom" constant="10" id="lhC-jq-O6e"/>
-                            <constraint firstItem="Vkd-tm-BGj" firstAttribute="leading" secondItem="BEB-8q-aJo" secondAttribute="leading" constant="10" id="rZ8-rT-WBP"/>
-                            <constraint firstItem="Hy4-Mx-aMf" firstAttribute="top" secondItem="s3F-pb-8d8" secondAttribute="bottom" constant="15" id="uCx-HU-Ekp"/>
+                            <constraint firstItem="s3F-pb-8d8" firstAttribute="top" secondItem="l1z-TF-Xxg" secondAttribute="bottom" constant="8" id="4k6-LX-ecM"/>
+                            <constraint firstItem="vi0-bC-B9E" firstAttribute="top" secondItem="s3F-pb-8d8" secondAttribute="bottom" constant="8" id="RFM-te-ouP"/>
+                            <constraint firstAttribute="trailing" secondItem="vi0-bC-B9E" secondAttribute="trailing" id="YI7-Z4-Tn6"/>
+                            <constraint firstItem="s3F-pb-8d8" firstAttribute="centerX" secondItem="BEB-8q-aJo" secondAttribute="centerX" id="pln-dy-X29"/>
+                            <constraint firstItem="vi0-bC-B9E" firstAttribute="leading" secondItem="BEB-8q-aJo" secondAttribute="leading" id="sd0-O0-SYX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Layout" id="A1i-cw-hRM">
@@ -225,12 +177,17 @@
                     <connections>
                         <outlet property="artistImageView" destination="M2P-dr-l3i" id="w8J-g5-Lqh"/>
                         <outlet property="compositeView" destination="vi0-bC-B9E" id="ss3-5w-Bra"/>
-                        <outlet property="paintingImageView" destination="NgJ-rJ-zWM" id="eIT-yv-DX7"/>
+                        <outlet property="paintingImageView" destination="CH1-4j-u0J" id="Jox-K2-cLe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fU8-hu-ktL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1620" y="-684.10794602698661"/>
+            <point key="canvasLocation" x="1012.5" y="-760.5"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
 </document>
